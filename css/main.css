@@ -1,0 +1,100 @@
+body, html {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+
+.nav-bar {
+	height: 7.5%;
+	display: block;
+	text-align: left;
+	background: transparent;
+}
+
+.content-wrapper {
+	height: 100%;
+	background-image: url("../assets/img/sunset.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#venue-info {
+	background-size: 100%;
+	background-image: url("http://www.eventvenueschattanooga.com/graphics/SonnetHouse4.jpg");
+}
+
+.footer {
+	height: 7.5%;
+	text-align: center;
+}
+
+.title {
+	display: inline-block;
+	padding-top: 4px;
+	padding-left: 20px;
+	margin: 0px;
+	font-family: 'Sorts Mill Goudy', serif;
+	color: #000;
+}
+
+.nav-menu {
+	display: inline-block;
+	float: right;
+	list-style-type: none;
+}
+
+.nav-menu li{
+	float: left;
+	display: block;
+	padding-right: 15px;
+	padding-left: 15px;
+	font-size: 20px;
+	color: #000;
+	border-left: 1px solid #bbb;
+}
+
+.nav-menu li a:hover{
+	color: #bbb;
+}
+
+.nav-menu li:first-child {
+	border: none;
+}
+
+.nav-menu li a{
+	text-decoration: none;
+	font-family: 'Sorts Mill Goudy', serif;
+	/*font-family: 'Handlee', cursive;*/
+	font-size: 20px;
+	color: #000;
+}
+
+.main-content div{
+	text-align: center;
+	margin: auto;
+	padding-top: 300px;
+	max-width: 1000px;
+	min-height: 200px;
+	max-height: 250px;
+}
+
+.main-content div h1{
+	display: inline-block;
+	margin: auto;
+	font-size: 100px;
+	color: #fff;
+	text-shadow: 1px 1px 1px #000000;
+	font-family: 'Playfair Display SC', serif;
+}
+
+.main-content div h2{
+	margin: 0px;
+	font-size: 45px;
+	color: #fff;
+	text-shadow: 1px 1px 1px #000000;
+	font-family: 'Poiret One', cursive;
+}
