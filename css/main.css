@@ -3,13 +3,12 @@ body, html {
 	margin: 0px;
 	padding: 0px;
 	overflow: hidden;
-	background-color: #fff;
+	background-color: #eee;
 	box-sizing: border-box;
 }
 
-.nav-bar {
+header {
 	height: 7.5%;
-	display: block;
 	text-align: left;
 	background: transparent;
 }
@@ -41,13 +40,13 @@ body, html {
 	color: #000;
 }
 
-.nav-menu {
+nav {
 	display: inline-block;
 	float: right;
 	list-style-type: none;
 }
 
-.nav-menu li{
+nav ul li{
 	float: left;
 	display: block;
 	padding-right: 15px;
@@ -57,20 +56,20 @@ body, html {
 	border-left: 1px solid #bbb;
 }
 
-.nav-menu li a:hover{
-	color: #bbb;
-}
-
-.nav-menu li:first-child {
+nav ul li:first-child {
 	border: none;
 }
 
-.nav-menu li a{
+nav ul li a{
 	text-decoration: none;
-	font-family: 'Sorts Mill Goudy', serif;
-	/*font-family: 'Handlee', cursive;*/
-	font-size: 20px;
+	/*font-family: 'Sorts Mill Goudy', serif;*/
+	font-family: 'Handlee', cursive;
+	font-size: 17.5px;
 	color: #000;
+}
+
+nav ul li a:hover{
+	color: #bbb;
 }
 
 .main-content div{
@@ -97,4 +96,107 @@ body, html {
 	color: #fff;
 	text-shadow: 1px 1px 1px #000000;
 	font-family: 'Poiret One', cursive;
+}
+
+#wedding-party-wrapper {
+	background-image: none;
+}
+
+.groomsmen, .bridesmaids {
+	padding-top: 25px;
+	text-align: center;
+}
+
+.groomsmen div, .bridesmaids div{
+	width: 125px;
+	height: 125px;
+	border-radius: 100%;
+	display: inline-block;
+	margin-left: 25px;
+	background-size: cover;
+}
+
+#groomsmen-photos, #bridesmaids {
+	width: 100%;
+	text-align: center;
+	font-family: 'Sorts Mill Goudy', serif;
+	font-size: 60px;
+}
+
+#groomsmen-names, #bridesmaid-names {
+	width: 100%;
+	margin-left: 190px;
+}
+
+.name {
+	display: inline-block;
+	text-align: center;
+	width: 125px;
+	margin-left: 25px;
+	padding-top: 5px;
+	font-family: 'Sorts Mill Goudy', serif;
+}
+
+#eric-alsobrook {
+	background-image: url("../assets/img/eric-alsobrook.jpg");
+}
+
+#jonathan-bush {
+	background-image: url("../assets/img/jonathan-bush.jpg");
+}
+
+#hudson-cornelius {
+	background-image: url("../assets/img/hudson-cornelius.jpg");
+}
+
+#andrew-kennedy {
+	background-image: url("../assets/img/andrew-kennedy.jpg");
+}
+
+#ryan-lichtenstein {
+	background-image: url("../assets/img/ryan-lichtenstein.jpg");
+}
+
+#nick-mcmenamin {
+	background-image: url("../assets/img/nick-mcmenamin.jpg");
+}
+
+#drew-reddock {
+	background-image: url("../assets/img/drew-reddock.jpg");
+}
+
+#david-walston {
+	background-image: url("../assets/img/david-walston.jpg");
+}
+
+#leeann-carrell {
+	background-image: url("../assets/img/eric-alsobrook.jpg");
+}
+
+#erin-brown{
+	background-image: url("../assets/img/jonathan-bush.jpg");
+}
+
+#amanda-cooper {
+	background-image: url("../assets/img/hudson-cornelius.jpg");
+}
+
+#jessica-eiland{
+	background-image: url("../assets/img/andrew-kennedy.jpg");
+}
+
+#caroline-fredericks {
+	background-image: url("../assets/img/ryan-lichtenstein.jpg");
+}
+
+#caroline-mcleroy{
+	background-image: url("../assets/img/nick-mcmenamin.jpg");
+}
+
+#maegan-thornberry {
+	background-image: url("../assets/img/drew-reddock.jpg");
+}
+
+#tiffinie-tidmore {
+	background-image: url("../assets/img/david-walston.jpg");
 }
