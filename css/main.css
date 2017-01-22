@@ -14,9 +14,11 @@ body, html {
 }
 
 header {
-	height: 7.5%;
+	position: fixed;
+	height: 10%;
+	width: 100%;
 	text-align: left;
-	background: transparent;
+	background: rgba(255, 255, 255, 0.95);
 }
 
 .main-content {
@@ -71,23 +73,42 @@ header {
 	nav {
 		position: absolute;
 		width: 100%;
+		height: 100%;
 		z-index: 99;
 	}
 
 	nav ul {
 		position: relative;
-		margin-top: 50px;
 		width: 100%;
+		height: 100vh;
+		float: left;
+		padding-left: 0;
+		margin-top: calc((100vh / 7) - 10%);
 		background: rgba(255, 255, 255, 0.95);
 	}
 
 	nav ul li{
 		display: block;
-		padding-top: 10px;
-		padding-left: 75px;
-		font-size: 50px;
+		height: calc((100% / 7) - 30px);
+		width: 100%;
 		color: #000;
-		text-align: left;
+		border-top: 1px solid gray;
+		padding-top: 30px;
+		text-align: center;
+	}
+
+	nav ul li:first-child {
+		border-top: none;
+	}
+
+	nav ul li:hover {
+		background-color: #eee;
+	}
+
+	nav ul li a {
+		padding: 2em 4em;
+		font-size: 15px;
+		text-transform: uppercase;
 	}
 
 	h1 {
@@ -129,12 +150,15 @@ header {
 		border: none;
 	}
 
+	nav ul li a{
+		font-size: 17.5px;
+	}
+
 }
 
 nav ul li a{
 	text-decoration: none;
 	font-family: 'Raleway', serif;
-	font-size: 17.5px;
 	color: #000;
 }
 
@@ -145,15 +169,6 @@ nav ul li a:hover{
 #selected {
 	color: #bbb;
 }
-
-/*.main-content div{
-	text-align: center;
-	margin: auto;
-	padding-top: 300px;
-	max-width: 1000px;
-	min-height: 200px;
-	max-height: 250px;
-}*/
 
 .main-content div{
 	text-align: center;
