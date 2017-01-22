@@ -57,6 +57,7 @@ header {
 @media only screen and (max-width: 768px) {
 	.nav-icon {
 		display: block;
+		position: relative;
 		margin-right: 15px;
 		margin-top: 10px;
 		width: 30px;
@@ -67,8 +68,26 @@ header {
 		float: right;
 	}
 
-	nav *{
-		display: none;
+	nav {
+		position: absolute;
+		width: 100%;
+		z-index: 99;
+	}
+
+	nav ul {
+		position: relative;
+		margin-top: 50px;
+		width: 100%;
+		background: rgba(255, 255, 255, 0.95);
+	}
+
+	nav ul li{
+		display: block;
+		padding-top: 10px;
+		padding-left: 75px;
+		font-size: 50px;
+		color: #000;
+		text-align: left;
 	}
 
 	h1 {
@@ -85,34 +104,35 @@ header {
 	.nav-icon {
 		display: none;
 	}
-	
-}
 
-nav {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	float: right;
-	list-style-type: none;
-}
+	nav ul li{
+		float: left;
+	}
 
-nav ul li{
-	float: left;
-	display: block;
-	padding-right: 15px;
-	padding-left: 15px;
-	font-size: 20px;
-	color: #000;
-}
+	nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		float: right;
+		list-style-type: none;
+	}
 
-nav ul li:first-child {
-	border: none;
+	nav ul li{
+		display: block;
+		padding-right: 15px;
+		padding-left: 15px;
+		font-size: 20px;
+		color: #000;
+	}
+
+	nav ul li:first-child {
+		border: none;
+	}
+
 }
 
 nav ul li a{
 	text-decoration: none;
-	/*font-family: 'Sorts Mill Goudy', serif;*/
-	/*font-family: 'Handlee', cursive;*/
 	font-family: 'Raleway', serif;
 	font-size: 17.5px;
 	color: #000;
