@@ -1,7 +1,7 @@
 body, html {
 	height: 100%;
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	overflow: hidden;
 	background-color: #eee;
 	box-sizing: border-box;
@@ -19,7 +19,7 @@ header {
 	background: transparent;
 }
 
-.content-wrapper {
+.main-content {
 	height: 100%;
 	background-size: 100%;
 }
@@ -35,17 +35,47 @@ header {
 }
 
 .title {
-	display: inline-block;
 	padding-top: 4px;
 	padding-left: 20px;
 	margin: 0px;
-	/*font-family: 'Sorts Mill Goudy', serif;*/
 	font-family: 'Tangerine', cursive;
 	color: #000;
 }
 
+@media only screen and (max-width: 768px) {
+	.nav-icon {
+		display: block;
+		margin-right: 15px;
+		margin-top: 10px;
+	}
+
+	nav *{
+		display: none;
+	}
+
+	h1 {
+		font-size: 75px;
+	}
+
+	h2 {
+		font-size: 50px;
+	}
+}
+
+.nav-icon {
+	display: none;
+	width: 30px;
+	height: 30px;
+	background: url("../assets/img/nav-icon.svg");
+	background-position: center;
+	background-size: cover;
+	float: right;
+}
+
 nav {
-	display: inline-block;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	float: right;
 	list-style-type: none;
 }
@@ -57,7 +87,6 @@ nav ul li{
 	padding-left: 15px;
 	font-size: 20px;
 	color: #000;
-	border-left: 1px solid #bbb;
 }
 
 nav ul li:first-child {
@@ -81,22 +110,43 @@ nav ul li a:hover{
 	color: #bbb;
 }
 
-.main-content div{
+/*.main-content div{
 	text-align: center;
 	margin: auto;
 	padding-top: 300px;
 	max-width: 1000px;
 	min-height: 200px;
 	max-height: 250px;
+}*/
+
+.main-content div{
+	text-align: center;
+	margin-top: 20%;
+}
+
+@media (min-device-width: 360px) {
+
+	h1 {
+		font-size: 75px;
+	}
+
+
+}
+
+@media (min-device-width: 768px) {
+
+	h1 {
+		font-size: 125px;
+	}
+
 }
 
 .main-content div h1{
 	display: inline-block;
 	margin: auto;
-	font-size: 125px;
+	/*font-size: 125px;*/
 	color: #fff;
 	text-shadow: 1px 1px 1px #000000;
-	/*font-family: 'Playfair Display SC', serif;*/
 	font-family: 'Tangerine', cursive;
 }
 
