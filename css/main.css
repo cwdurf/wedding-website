@@ -13,6 +13,13 @@ body, html {
 	background-position: center;
 }
 
+#the-big-day-bg {
+	background-image: url("http://www.thesonnethouse.com/wp-content/gallery/sonnet-house/Smith_Squared_Photography_2.jpg");
+	/*background-image: url("http://www.eventvenueschattanooga.com/graphics/SonnetHouse4.jpg");*/
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
 header {
 	position: fixed;
 	height: 10%;
@@ -21,14 +28,13 @@ header {
 	background: rgba(255, 255, 255, 0.95);
 }
 
+button {
+	border: none;
+}
+
 .main-content {
 	height: 100%;
 	background-size: 100%;
-}
-
-#venue-info {
-	background-size: 100%;
-	background-image: url("http://www.eventvenueschattanooga.com/graphics/SonnetHouse4.jpg");
 }
 
 .footer {
@@ -58,26 +64,20 @@ header {
 
 @media only screen and (max-width: 768px) {
 	.nav-icon {
-		display: block;
-		position: relative;
-		margin-right: 15px;
-		margin-top: 10px;
 		width: 30px;
 		height: 30px;
-		background: url("../assets/img/nav-icon.svg") no-repeat;
-		background-position: center;
-		background-size: cover;
-		float: right;
+		z-index: 99;
 	}
 
 	nav {
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		z-index: 99;
+		/*z-index: 99;*/
 	}
 
-	nav ul {
+	.dropdown {
+		/*display: none;*/
 		position: relative;
 		width: 100%;
 		height: 100vh;
