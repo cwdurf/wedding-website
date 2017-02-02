@@ -1,8 +1,10 @@
 $(document).ready(function() {
-  $(".dropdown").hide();
+  if ($(window).width() <= 768){
+    $(".dropdown").hide();
+  }
 	$("header").click(function() {
-    //$(".dropdown").show();
-		$(".dropdown").slideToggle("fast");
+    if ($(window).width() <= 768){
+      $(".dropdown").slideToggle("fast")
+    }
 	});
-  console.log("success");
 });

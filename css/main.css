@@ -2,30 +2,53 @@ body, html {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
+	overflow: auto;
 	background-color: #eee;
 	box-sizing: border-box;
 }
 
 #index-bg {
-	background-image: url("../assets/img/sunset.jpg");
+	background-image: url("../assets/img/bc-2.jpg");
 	background-repeat: no-repeat;
-	background-position: center;
+	/*background-position: center;*/
+	background-size: 100% auto;
+}
+
+#wedding-party-bg {
+	background-image: url("../assets/img/bc-1.jpg");
+	background-repeat: no-repeat;
+	/*background-position: center;*/
+	background-size: 100% auto;
 }
 
 #the-big-day-bg {
 	background-image: url("http://www.thesonnethouse.com/wp-content/gallery/sonnet-house/Smith_Squared_Photography_2.jpg");
 	/*background-image: url("http://www.eventvenueschattanooga.com/graphics/SonnetHouse4.jpg");*/
 	background-repeat: no-repeat;
-	background-position: center;
+	background-size: 100% auto;
+}
+
+#bham-bg {
+	background-image: url("../assets/img/bham.jpg");
+	/*background-image: url("http://www.eventvenueschattanooga.com/graphics/SonnetHouse4.jpg");*/
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+
+#lodging-bg {
+	background-image: url("../assets/img/hotel.jpg");
+	/*background-image: url("http://www.eventvenueschattanooga.com/graphics/SonnetHouse4.jpg");*/
+	background-repeat: no-repeat;
+	background-size: 100% auto;
 }
 
 header {
 	position: fixed;
-	height: 10%;
+	height: 7%;
 	width: 100%;
 	text-align: left;
 	background: rgba(255, 255, 255, 0.95);
+	z-index: 99;
 }
 
 button {
@@ -151,14 +174,16 @@ button {
 	}
 
 	nav ul li a{
-		font-size: 17.5px;
+		font-size: 13.5px;
 	}
 
 }
 
 nav ul li a{
 	text-decoration: none;
+	text-transform: uppercase;
 	font-family: 'Raleway', serif;
+	letter-spacing: 0.2em;
 	color: #000;
 }
 
@@ -171,7 +196,7 @@ nav ul li a:hover{
 }
 
 .main-content div{
-	text-align: center;
+	text-align: left;
 	margin-top: 20%;
 }
 
@@ -179,6 +204,11 @@ nav ul li a:hover{
 
 	h1 {
 		font-size: 75px;
+		padding-left: 25px;
+	}
+
+	h2 {
+		padding-left: 350px;
 	}
 
 
@@ -195,10 +225,10 @@ nav ul li a:hover{
 .main-content div h1{
 	display: inline-block;
 	margin: auto;
-	/*font-size: 125px;*/
 	color: #fff;
 	text-shadow: 1px 1px 1px #000000;
-	font-family: 'Tangerine', cursive;
+	font-family: 'Tangerine';
+	font-weight: lighter;
 }
 
 .main-content div h2{
@@ -206,47 +236,62 @@ nav ul li a:hover{
 	font-size: 55px;
 	color: #fff;
 	text-shadow: 1px 1px 1px #000000;
-	/*font-family: 'Poiret One', cursive;*/
 	font-family: 'Tangerine', cursive;
+	font-weight: lighter;
 }
 
 #wedding-party-wrapper {
-	background-image: none;
+	padding-top: 7%;
 }
 
-.groomsmen, .bridesmaids {
-	padding-top: 25px;
-	text-align: center;
+#wedding-party {
+	width: 75%;
+	background-color: rgba(0, 0, 0, 0.75);
+	color: white;
+	margin: auto;
+	border-radius: 10px 10px 10px 10px;
 }
 
-.groomsmen div, .bridesmaids div{
-	width: 125px;
-	height: 125px;
-	border-radius: 100%;
+.groomsmen div, .bridesmaids div {
+	text-align: left;
 	display: inline-block;
-	margin-left: 25px;
+}
+
+.wedding-party {
+	width: 100%;
+	height: 200px;
+}
+
+.wedding-party div:first-of-type {
+	float: left;
+	display: inline-block;
+	border-radius: 100%;
+	width: 165px;
+	height: 165px;
+	margin-left: 10px;
 	background-size: cover;
+	filter: grayscale(100%);
 }
 
 #groomsmen-photos, #bridesmaids {
 	width: 100%;
 	text-align: center;
 	font-family: 'Tangerine', cursive;
+	font-weight: lighter;
 	font-size: 75px;
-}
-
-#groomsmen-names, #bridesmaid-names {
-	width: 100%;
-	margin-left: 190px;
 }
 
 .name {
 	display: inline-block;
 	text-align: center;
-	width: 125px;
-	margin-left: 25px;
-	padding-top: 5px;
+	width: 33%;
+	height: 50px;
+	padding-top: 80px;
+	padding-left: 100px;
+	text-transform: uppercase;
 	font-family: 'Raleway', serif;
+	font-size: 25px;
+	letter-spacing: 0.15em;
 }
 
 #eric-alsobrook {
