@@ -12,20 +12,23 @@ body, html {
 #index-bg {
 	background-image: url("../assets/img/bc-2.jpg");
 	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+	/*background-position: center;
+	background-size: cover;*/
+	background-repeat: no-repeat;
+	background-size: 100% auto;
 }
 
 #wedding-party-bg {
 	background-image: url("../assets/img/bc-1.jpg");
+	/*background-position: center;
+	background-size: cover;*/
 	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+	background-size: 100% auto;
 }
 
 #the-big-day-bg {
-	background-image: url("http://www.thesonnethouse.com/wp-content/gallery/sonnet-house/Smith_Squared_Photography_2.jpg");
-	/*background-image: url("http://www.eventvenueschattanooga.com/graphics/SonnetHouse4.jpg");*/
+	/*background-image: url("http://www.thesonnethouse.com/wp-content/gallery/sonnet-house/Smith_Squared_Photography_2.jpg");*/
+	background-image: url("http://www.eventvenueschattanooga.com/graphics/SonnetHouse4.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 }
@@ -279,10 +282,6 @@ main {
 	width: 100%;
 	height: 100%;
 	padding-top: 56px;
-	background-image: url("../assets/img/bc-1.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
 }
 
 .content {
