@@ -1,50 +1,82 @@
+/******************
+	Common
+*******************/
+
 body, html {
-	overflow: auto;
+	overflow: hidden;
 
 	box-sizing: border-box;
 	height: 100%;
 	margin: 0;
 	padding: 0;
 
-	background-color: #eee;
+	background-color: #fff;
+}
+
+main {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	margin-top: 55px;
+}
+
+.banner {
+	width: 100%;
+	height: 750px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: fixed;
+}
+
+.content {
+	overflow-y: auto;
+	overflow-x: hidden;
+	width: 75%;
+	height: 100vh;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 56px;
+
+	color: white;
+	background-color: rgba(0, 0, 0, 0.75);
+}
+
+.content h1 {
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Great Vibes', cursive;
+	font-weight: lighter;
+	color: #fff;
 }
 
 #index-bg {
 	background-image: url("../assets/img/bc-2.jpg");
-	background-repeat: no-repeat;
-	/*background-position: center;
-	background-size: cover;*/
-	background-repeat: no-repeat;
-	background-size: 100% auto;
 }
 
 #wedding-party-bg {
 	background-image: url("../assets/img/bc-1.jpg");
-	/*background-position: center;
-	background-size: cover;*/
-	background-repeat: no-repeat;
-	background-size: 100% auto;
 }
 
 #the-big-day-bg {
-	/*background-image: url("http://www.thesonnethouse.com/wp-content/gallery/sonnet-house/Smith_Squared_Photography_2.jpg");*/
-	background-image: url("http://www.eventvenueschattanooga.com/graphics/SonnetHouse4.jpg");
-	background-repeat: no-repeat;
-	background-size: 100% auto;
+	background-image: url("../assets/img/bc-3.jpg");
+}
+
+#sonnet-house-bg {
+	background-image: url("http://www.thesonnethouse.com/wp-content/gallery/sonnet-house/Smith_Squared_Photography_2.jpg");
 }
 
 #bham-bg {
 	background-image: url("../assets/img/bham.jpg");
-	/*background-image: url("http://www.eventvenueschattanooga.com/graphics/SonnetHouse4.jpg");*/
-	background-repeat: no-repeat;
-	background-size: 100% auto;
 }
 
-#lodging-bg {
+#registry-bg {
 	background-image: url("../assets/img/hotel.jpg");
-	/*background-image: url("http://www.eventvenueschattanooga.com/graphics/SonnetHouse4.jpg");*/
-	background-repeat: no-repeat;
-	background-size: 100% auto;
 }
 
 header {
@@ -53,7 +85,7 @@ header {
 	top: 0px;
 
 	width: 100%;
-	/*height: 7%;*/
+	height: 55px;
 
 	text-align: left;
 
@@ -100,6 +132,10 @@ button {
 		background-size: cover;
 }
 
+/***********************
+	Screen size <= 768 px
+************************/
+
 @media only screen and (max-width: 768px) {
 	.nav-icon {
 		z-index: 99;
@@ -113,7 +149,6 @@ button {
 
 		width: 100%;
 		height: 100%;
-		/*z-index: 99;*/
 	}
 
 	.dropdown {
@@ -165,9 +200,75 @@ button {
 	h2 {
 		font-size: 50px;
 	}
+
+	.content {
+		width: 100%;
+	}
+
+	.main {
+		background-position: center;
+	}
+
+	.wedding-party div {
+		text-align: center;
+		padding-bottom: 10px;
+	}
+
+
+	.wedding-party div > div:first-of-type {
+		display: flex;
+
+		height: inherit;
+		flex-flow: column;
+
+		justify-content: center;
+		align-items: center;
+
+	}
+
+	.wedding-party div > div:first-of-type > div {
+		width: 130px;
+		height: 130px;
+
+		border-radius: 100%;
+		background-size: cover;
+		flex-flow: row;
+
+		filter: grayscale(100%);
+	}
+
+	.wedding-party > h1 {
+		width: 100%;
+
+		text-align: center;
+
+		font-size: 75px;
+	}
+
+	.name {
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+
+		font-family: 'Raleway', serif;
+		font-size: 20px;
+	}
+
+	#index-bg {
+		background-position: center;
+	}
+
+	#the-big-day-bg {
+		/*background-image: url("http://www.thesonnethouse.com/wp-content/gallery/sonnet-house/Smith_Squared_Photography_2.jpg");*/
+		/*background-image: url("http://www.eventvenueschattanooga.com/graphics/SonnetHouse4.jpg");*/
+		background-position: center;
+	}
+
+	#wedding-party-bg {
+		background-position: center;
+	}
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
 
 	.nav-icon {
 		display: none;
@@ -206,6 +307,35 @@ button {
 		font-size: 13.5px;
 	}
 
+	.wedding-party div {
+		display: flex;
+		height: 200px;
+		width: 100%;
+		flex-flow: row;
+		align-content: flex-start;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.wedding-party div div {
+		width: 33%;
+	}
+
+	.wedding-party div > div:first-of-type > div {
+		width: 165px;
+		height: 165px;
+
+		border-radius: 100%;
+		background-size: cover;
+		flex-flow: row;
+
+		filter: grayscale(100%);
+	}
+
+	#the-big-day .content {
+		display: flex;
+	}
+
 }
 
 nav ul li a{
@@ -235,22 +365,14 @@ nav ul li a:hover{
 @media (min-device-width: 360px) {
 
 	h1 {
-		padding-left: 25px;
 
 		font-size: 75px;
+		margin-top: 15px;
+		margin-bottom: 15px;
 	}
 
 	h2 {
 		padding-left: 350px;
-	}
-
-
-}
-
-@media (min-device-width: 768px) {
-
-	h1 {
-		font-size: 125px;
 	}
 
 }
@@ -276,21 +398,6 @@ nav ul li a:hover{
 	font-family: 'Tangerine', cursive;
 	font-size: 55px;
 	font-weight: lighter;
-}
-
-main {
-	width: 100%;
-	height: 100%;
-	padding-top: 56px;
-}
-
-.content {
-	width: 75%;
-	margin: auto;
-
-	color: white;
-	border-radius: 10px 10px 10px 10px;
-	background-color: rgba(0, 0, 0, 0.85);
 }
 
 .registry {
@@ -338,35 +445,8 @@ main {
 	text-decoration: none;
 }
 
-.wedding-party div {
-	display: flex;
-
-	width: 100%;
-	height: 200px;
-
-	flex-flow: row;
-	align-content: flex-start;
-}
-
-.wedding-party div div {
-	display: flex;
-
-	width: 33.333%;
-	height: inherit;
-
-	justify-content: center;
-	align-items: center;
-
-}
-
-.wedding-party div > div:first-of-type > div {
-	width: 165px;
-	height: 165px;
-
-	border-radius: 100%;
-	background-size: cover;
-
-	filter: grayscale(100%);
+.wedding-party > div:last-of-type {
+	margin-bottom: 25px;
 }
 
 .wedding-party > h1 {
@@ -380,16 +460,12 @@ main {
 }
 
 .name {
-	letter-spacing: 0.15em;
+	letter-spacing: 0.05em;
 	text-transform: uppercase;
 
 	font-family: 'Raleway', serif;
 	font-size: 20px;
 }
-
-/*span {
-	font-family: 'Great Vibes', cursive;
-}*/
 
 #eric-alsobrook {
 	background-image: url("../assets/img/eric-alsobrook.jpg");
@@ -423,6 +499,22 @@ main {
 	background-image: url("../assets/img/david-walston.jpg");
 }
 
+#daniel-asriel {
+	background-image: url("../assets/img/daniel-asriel.jpg");
+}
+
+#hayden-gunter {
+	background-image: url("../assets/img/hayden-gunter.jpg");
+}
+
+#bradford-houseal{
+	background-image: url("../assets/img/bradford-houseal.jpg");
+}
+
+#woods-parker {
+	background-image: url("../assets/img/woods-parker.jpg");
+}
+
 #leeann-carrell {
 	background-image: url("../assets/img/leeann-carrell.jpg");
 }
@@ -453,9 +545,4 @@ main {
 
 #tiffinie-tidmore {
 	background-image: url("../assets/img/tiffinie-tidmore.jpg");
-}
-
-img {
-	height: 100px;
-	width: auto;
 }
