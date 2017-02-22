@@ -2,7 +2,7 @@
 	Common
 *******************/
 
-body, html {
+html {
 	overflow: hidden;
 
 	box-sizing: border-box;
@@ -13,7 +13,14 @@ body, html {
 	background-color: #fff;
 }
 
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
 main {
+	overflow-y: auto;
 	width: 100%;
 	height: 100%;
 	margin: auto;
@@ -25,31 +32,57 @@ main {
 
 .banner {
 	width: 100%;
-	height: 750px;
+	height: 900px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	position: fixed;
 }
 
 .content {
-	overflow-y: auto;
 	overflow-x: hidden;
-	width: 75%;
 	height: 100vh;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 56px;
 
 	color: white;
-	background-color: rgba(0, 0, 0, 0.75);
+}
+
+.full-width {
+	width: 75%;
+	overflow-y: auto;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.half-width {
+	width: 55%;
+	overflow-y: hidden;
 }
 
 .content h1 {
 	text-align: center;
 }
 
-h1 {
+.storyboard {
+	width: 100%;
+	text-align: center;
+}
+
+p {
+	text-align: center;
+	letter-spacing: 0.05em;
+
+	color: #fff;
+
+	font-family: 'Raleway', serif;
+	font-weight: bold;
+}
+
+.content-header {
+	text-align: center;
+	color: #000;
+}
+
+h1, h2 {
 	font-family: 'Great Vibes', cursive;
 	font-weight: lighter;
 	color: #fff;
@@ -57,6 +90,23 @@ h1 {
 
 #index-bg {
 	background-image: url("../assets/img/bc-2.jpg");
+}
+
+#index-bg > div {
+	padding-top: 50vh;
+	padding-left: 10px;
+}
+
+.title {
+	text-shadow: #000 1px 1px;
+	margin: 0;
+}
+
+#index-bg > div > h2 {
+	text-shadow: #000 1px 1px;
+	font-size: 2.75em;
+	padding-left: 50px;
+	margin: 0;
 }
 
 #wedding-party-bg {
@@ -67,8 +117,17 @@ h1 {
 	background-image: url("../assets/img/bc-3.jpg");
 }
 
+#our-story-bg {
+	background-image: url("../assets/img/bc-3.jpg");
+}
+
+#proposal-bg {
+	background-image: url("../assets/img/ring.jpg");
+}
+
 #sonnet-house-bg {
-	background-image: url("http://www.thesonnethouse.com/wp-content/gallery/sonnet-house/Smith_Squared_Photography_2.jpg");
+	background-image: url("../assets/img/sonnet-house.jpg");
+	/*background-image: url("http://www.thesonnethouse.com/wp-content/gallery/sonnet-house/Smith_Squared_Photography_2.jpg");*/
 }
 
 #bham-bg {
@@ -89,7 +148,7 @@ header {
 
 	text-align: left;
 
-	background: rgba(255, 255, 255, 0.95);
+	background: #fff;
 }
 
 button {
@@ -106,16 +165,6 @@ button {
 	height: 7.5%;
 
 	text-align: center;
-}
-
-.title {
-	margin: 0px;
-	padding-top: 4px;
-	padding-left: 20px;
-
-	color: #000;
-
-	font-family: 'Tangerine', cursive;
 }
 
 .nav-icon {
@@ -158,10 +207,10 @@ button {
 
 		width: 100%;
 		height: 100vh;
-		margin-top: calc((100vh / 7) - 10%);
+		margin-top: calc((100vh / 7) - 12%);
 		padding-left: 0;
 
-		background: rgba(255, 255, 255, 0.95);
+		background: rgb(255, 255, 255);
 	}
 
 	nav ul li{
@@ -169,7 +218,7 @@ button {
 
 		width: 100%;
 		height: calc((100% / 7) - 30px);
-		padding-top: 30px;
+		padding-top: 35px;
 
 		text-align: center;
 
@@ -207,6 +256,10 @@ button {
 
 	.main {
 		background-position: center;
+	}
+
+	.title {
+		font-size: 3.5em;
 	}
 
 	.wedding-party div {
@@ -269,6 +322,10 @@ button {
 }
 
 @media only screen and (min-width: 769px) {
+
+	.title {
+		font-size: 8em;
+	}
 
 	.nav-icon {
 		display: none;
@@ -362,7 +419,7 @@ nav ul li a:hover{
 	text-align: left;
 }
 
-@media (min-device-width: 360px) {
+@media (min-device-width: 768px) {
 
 	h1 {
 
@@ -372,7 +429,7 @@ nav ul li a:hover{
 	}
 
 	h2 {
-		padding-left: 350px;
+		padding-left: 325px;
 	}
 
 }
