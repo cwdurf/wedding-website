@@ -19,6 +19,23 @@ body {
 	padding: 0;
 }
 
+button {
+  width: 150px;
+  height: 50px;
+  background-color: buttonface;
+  border-style: solid;
+	border-width: 5px;
+  border-color: #fff;
+	color: #fff;
+  font-size: 20px;
+	font-family: 'Raleway', serif;
+}
+button:hover {
+  border-color: #fff;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 1);
+}
+
 main {
 	overflow-y: auto;
 	width: 100%;
@@ -94,7 +111,6 @@ h1, h2 {
 
 #index-bg > div {
 	padding-top: 50vh;
-	padding-left: 10px;
 }
 
 .title {
@@ -105,7 +121,7 @@ h1, h2 {
 #index-bg > div > h2 {
 	text-shadow: #000 1px 1px;
 	font-size: 2.75em;
-	padding-left: 50px;
+	padding-left: 250px;
 	margin: 0;
 }
 
@@ -182,10 +198,10 @@ button {
 }
 
 /***********************
-	Screen size <= 768 px
+	Screen size <= 1024 px
 ************************/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
 	.nav-icon {
 		z-index: 99;
 
@@ -259,7 +275,12 @@ button {
 	}
 
 	.title {
-		font-size: 3.5em;
+		font-size: 10.5em;
+	}
+
+	#index-bg > div > h2 {
+		font-size: 8em;
+		padding-left: 100px;
 	}
 
 	.wedding-party div {
@@ -321,7 +342,89 @@ button {
 	}
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (max-width: 768px) {
+	.title {
+		font-size: 7em;
+	}
+
+	#index-bg > div > h2 {
+		font-size: 4.5em;
+		padding-left: 100px;
+	}
+}
+
+@media only screen and (max-width: 414px) {
+	.title {
+		font-size: 4em;
+	}
+
+	#index-bg > div > h2 {
+		font-size: 2.75em;
+	}
+
+	.registry div h1 {
+		font-size: 45px;
+	}
+
+	#amazon {
+		font-size: 45px;
+		padding-top: 75px;
+	}
+
+	#bbb {
+		font-size: 35px;
+		padding-top: 50px;
+	}
+
+	#wayfair {
+		font-size: 45px;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.title {
+		font-size: 3.5em;
+	}
+
+	#index-bg > div > h2 {
+		font-size: 2.25em;
+		padding-left: 55px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.title {
+		font-size: 3.2em;
+	}
+
+	#index-bg > div > h2 {
+		font-size: 2em;
+	}
+
+	.registry div h1 {
+		font-size: 25px;
+	}
+
+	.registry div {
+		height: 22.5%;
+	}
+
+	#amazon {
+		font-size: 30px;
+		padding-top: 5px;
+	}
+
+	#bbb {
+		font-size: 27.5px;
+		padding-top: 0px;
+	}
+
+	#wayfair {
+		font-size: 30px;
+	}
+}
+
+@media only screen and (min-width: 1025px) {
 
 	.title {
 		font-size: 8em;
@@ -429,32 +532,25 @@ nav ul li a:hover{
 	}
 
 	h2 {
-		padding-left: 325px;
+		padding-left: 350px;
 	}
 
-}
+	.registry div h1 {
+		font-size: 60px;
+	}
 
-.main-content div h1{
-	display: inline-block;
+	#amazon {
+		font-size: 75px;
+	}
 
-	margin: auto;
+	#bbb {
+		font-size: 62.5px;
+	}
 
-	color: #fff;
-	text-shadow: 1px 1px 1px #000000;
+	#wayfair {
+		font-size: 75px;
+	}
 
-	font-family: 'Tangerine';
-	font-weight: lighter;
-}
-
-.main-content div h2{
-	margin: 0px;
-
-	color: #fff;
-	text-shadow: 1px 1px 1px #000000;
-
-	font-family: 'Tangerine', cursive;
-	font-size: 55px;
-	font-weight: lighter;
 }
 
 .registry {
@@ -463,7 +559,7 @@ nav ul li a:hover{
 
 .registry div {
 	width: 100%;
-	height: 25%;
+	height: 22.5%;
 	display: flex;
 	align-content: flex-start;
 	justify-content: center;
@@ -471,7 +567,6 @@ nav ul li a:hover{
 
 .registry div h1 {
 	font-family: 'Raleway', serif;
-	font-size: 60px;
 	font-weight: lighter;
 	text-transform: uppercase;
 	text-align: center;
@@ -480,25 +575,19 @@ nav ul li a:hover{
 #amazon {
 	color: #ff6600;
 	font-family: 'Helvetica';
-	font-size: 75px;
 	text-decoration: none;
 }
 
 #bbb {
-	/*color: #273691;*/
 	color: #ADD8E6;
-	/*color: #fff;*/
 	font-family: 'Futura';
-	font-size: 75px;
 	text-decoration: none;
 	text-transform: uppercase;
 }
 
 #wayfair {
-	/*color: #273691;*/
 	color: #82d170;
 	font-family: 'Helvetica';
-	font-size: 75px;
 	text-decoration: none;
 }
 
