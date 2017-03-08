@@ -23,23 +23,6 @@ body {
     display: none;
 }
 
-button {
-  width: 150px;
-  height: 50px;
-  background-color: buttonface;
-  border-style: solid;
-	border-width: 5px;
-  border-color: #fff;
-	color: #fff;
-  font-size: 20px;
-	font-family: 'Raleway', serif;
-}
-button:hover {
-  border-color: #fff;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 1);
-}
-
 main {
 	overflow-y: auto;
 	width: 100%;
@@ -61,7 +44,7 @@ main {
 
 .content {
 	overflow-x: hidden;
-	height: 100vh;
+	height: 150vh;
 	margin-left: auto;
 	margin-right: auto;
 
@@ -69,13 +52,11 @@ main {
 }
 
 .full-width {
-	width: 75%;
 	overflow-y: auto;
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .half-width {
-	width: 35%;
 	overflow-y: hidden;
 }
 
@@ -86,10 +67,6 @@ main {
 .storyboard {
 	width: 100%;
 	text-align: center;
-}
-
-.storyboard > p:first-of-type {
-	padding-top: 250px;
 }
 
 p {
@@ -111,6 +88,13 @@ h1, h2 {
 	font-family: 'Great Vibes', cursive;
 	font-weight: lighter;
 	color: #fff;
+	text-shadow: #555 1px 1px;
+}
+
+h2 {
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 #index-bg {
@@ -124,6 +108,10 @@ h1, h2 {
 .title {
 	text-shadow: #000 1px 1px;
 	margin: 0;
+}
+
+#date {
+	text-align: left;
 }
 
 #index-bg > div > h2 {
@@ -151,6 +139,7 @@ h1, h2 {
 
 #sonnet-house-bg {
 	background-image: url("../assets/img/sonnet-house.jpg");
+	background-position: center;
 	/*background-image: url("http://www.thesonnethouse.com/wp-content/gallery/sonnet-house/Smith_Squared_Photography_2.jpg");*/
 }
 
@@ -175,8 +164,34 @@ header {
 	background: #fff;
 }
 
+.content > h2:not(first-of-type) {
+	margin-top: 25px;
+}
+
+.button-placeholder {
+	text-align: center;
+	margin-top: 25px;
+}
+
 button {
-	border: none;
+  border-style: solid;
+  border-color: #fff;
+	border-width: 2px;
+  background-color: transparent;
+  width: 150px;
+  height: 50px;
+}
+
+button:hover {
+  color: #000;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+button > a {
+  color: #fff;
+  font-size: 15px;
+	text-transform: uppercase;
+	text-decoration: none;
 }
 
 .main-content {
@@ -205,11 +220,27 @@ button {
 		background-size: cover;
 }
 
+#map {
+	width: 100%;
+	padding-top: 50px;
+	text-align: center;
+}
+
+#map > iframe {
+	width: 75%;
+	height: 350px;
+}
+
 /***********************
 	Screen size <= 1024 px
 ************************/
 
 @media only screen and (max-width: 1024px) {
+
+	.full-width, .half-width {
+		width: 100%;
+	}
+
 	.nav-icon {
 		z-index: 99;
 
@@ -268,10 +299,16 @@ button {
 
 	h1 {
 		font-size: 75px;
+		margin-bottom: 0;
+		text-shadow: #555 1px 1px;
 	}
 
 	h2 {
-		font-size: 50px;
+		font-size: 35px;
+		text-align: center;
+		margin-top: 0;
+		margin-bottom: 0;
+		text-shadow: #555 1px 1px;
 	}
 
 	.main {
@@ -285,6 +322,10 @@ button {
 	#index-bg > div > h2 {
 		font-size: 8em;
 		padding-left: 100px;
+	}
+
+	.storyboard > p:first-of-type {
+		padding-top: 0px;
 	}
 
 	.wedding-party div {
@@ -370,6 +411,14 @@ button {
 		font-size: 4em;
 	}
 
+	.content > h1 {
+		font-size: 75px;
+	}
+
+	.content > h2 {
+		font-size: 35px;
+	}
+
 	#index-bg > div > h2 {
 		font-size: 2.75em;
 	}
@@ -450,6 +499,22 @@ button {
 
 @media only screen and (min-width: 1025px) {
 
+	.full-width {
+		width: 75%;
+	}
+
+	h1 {
+		font-size: 125px;
+	}
+
+	h2 {
+		font-size: 50px;
+	}
+
+	.half-width {
+		width: 35%;
+	}
+
 	.title {
 		font-size: 8em;
 	}
@@ -458,13 +523,11 @@ button {
 		display: none;
 	}
 
-	nav ul li{
-		float: left;
-	}
-
 	nav {
 		display: flex;
 		float: right;
+
+		height: 100%;
 
 		list-style-type: none;
 
@@ -473,8 +536,8 @@ button {
 	}
 
 	nav ul li{
-		display: block;
-
+		display: flex;
+		float: left;
 		padding-right: 15px;
 		padding-left: 15px;
 
@@ -489,6 +552,10 @@ button {
 
 	nav ul li a{
 		font-size: 13.5px;
+	}
+
+	.storyboard > p:first-of-type {
+		padding-top: 250px;
 	}
 
 	.wedding-party div {
@@ -549,14 +616,9 @@ nav ul li a:hover{
 @media (min-device-width: 768px) {
 
 	h1 {
-
-		font-size: 75px;
+		/*font-size: 75px;*/
 		margin-top: 15px;
 		margin-bottom: 15px;
-	}
-
-	h2 {
-		padding-left: 350px;
 	}
 
 	.registry div h1 {
