@@ -56,6 +56,11 @@ main {
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
+.full-width-no-overlay {
+	overflow-y: auto;
+	height: 100vh;
+}
+
 .half-width {
 	overflow-y: hidden;
 }
@@ -114,6 +119,22 @@ h2 {
 	text-align: left;
 }
 
+.to-do {
+	list-style-type: none;
+	text-align: center;
+}
+
+.to-do > li:not(first-of-type) {
+	padding-top: 10px;
+}
+
+.to-do > li > a {
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Raleway', serif;
+	text-transform: uppercase;
+}
+
 #index-bg > div > h2 {
 	text-shadow: #000 1px 1px;
 	font-size: 2.75em;
@@ -144,7 +165,7 @@ h2 {
 }
 
 #bham-bg {
-	background-image: url("../assets/img/bham.jpg");
+	background-image: url("../assets/img/bham-2.jpg");
 }
 
 #registry-bg {
@@ -237,7 +258,7 @@ button > a {
 
 @media only screen and (max-width: 1024px) {
 
-	.full-width, .half-width {
+	.full-width, .full-width-no-overlay, .half-width {
 		width: 100%;
 	}
 
@@ -400,6 +421,10 @@ button > a {
 		font-size: 4.5em;
 		padding-left: 100px;
 	}
+
+	p {
+		font-size: 12.5px;
+	}
 }
 
 /***********************
@@ -499,7 +524,7 @@ button > a {
 
 @media only screen and (min-width: 1025px) {
 
-	.full-width {
+	.full-width, .full-width-no-overlay {
 		width: 75%;
 	}
 
@@ -555,7 +580,7 @@ button > a {
 	}
 
 	.storyboard > p:first-of-type {
-		padding-top: 250px;
+		/*padding-top: 250px;*/
 	}
 
 	.wedding-party div {
