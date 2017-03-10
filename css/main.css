@@ -36,7 +36,7 @@ main {
 
 .banner {
 	width: 100%;
-	height: 900px;
+	height: 1024px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -106,8 +106,13 @@ h2 {
 	background-image: url("../assets/img/bc-2.jpg");
 }
 
-#index-bg > div {
+#title {
 	padding-top: 50vh;
+}
+
+#index-bg > div > p {
+	text-transform: uppercase;
+	bottom: 0;
 }
 
 .title {
@@ -122,6 +127,7 @@ h2 {
 .to-do {
 	list-style-type: none;
 	text-align: center;
+	padding-left: 0;
 }
 
 .to-do > li:not(first-of-type) {
@@ -161,11 +167,10 @@ h2 {
 #sonnet-house-bg {
 	background-image: url("../assets/img/sonnet-house.jpg");
 	background-position: center;
-	/*background-image: url("http://www.thesonnethouse.com/wp-content/gallery/sonnet-house/Smith_Squared_Photography_2.jpg");*/
 }
 
 #bham-bg {
-	background-image: url("../assets/img/bham-2.jpg");
+	background-image: url("../assets/img/bham.jpg");
 }
 
 #registry-bg {
@@ -208,11 +213,22 @@ button:hover {
   background-color: rgba(255, 255, 255, 1);
 }
 
+a > button {
+  color: #fff;
+  font-size: 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
 button > a {
   color: #fff;
   font-size: 15px;
 	text-transform: uppercase;
 	text-decoration: none;
+}
+
+button > a:hover {
+  color: #000;
 }
 
 .main-content {
@@ -249,7 +265,7 @@ button > a {
 
 #map > iframe {
 	width: 75%;
-	height: 350px;
+	height: 550px;
 }
 
 /***********************
@@ -260,6 +276,18 @@ button > a {
 
 	.full-width, .full-width-no-overlay, .half-width {
 		width: 100%;
+	}
+
+	#credits {
+		margin-top: 200px;
+	}
+
+	#sonnet-house-content {
+		height: 110vh;
+	}
+
+	#proposal-content {
+		height: 75vh;
 	}
 
 	.nav-icon {
@@ -283,7 +311,7 @@ button > a {
 
 		width: 100%;
 		height: 100vh;
-		margin-top: calc((100vh / 7) - 12%);
+		margin-top: 55px;
 		padding-left: 0;
 
 		background: rgb(255, 255, 255);
@@ -422,6 +450,22 @@ button > a {
 		padding-left: 100px;
 	}
 
+	#bham-content {
+		height: 165vh;
+	}
+
+	#sonnet-house-content {
+		height: 135vh;
+	}
+
+	#wedding-party-content {
+		height: 500vh;
+	}
+
+	#proposal-content {
+		height: 100vh;
+	}
+
 	p {
 		font-size: 12.5px;
 	}
@@ -432,12 +476,17 @@ button > a {
 ************************/
 
 @media only screen and (max-width: 414px) {
+
 	.title {
 		font-size: 4em;
 	}
 
+	#credits {
+		margin-top: 125px;
+	}
+
 	.content > h1 {
-		font-size: 75px;
+		font-size: 67.5px;
 	}
 
 	.content > h2 {
@@ -446,6 +495,22 @@ button > a {
 
 	#index-bg > div > h2 {
 		font-size: 2.75em;
+	}
+
+	#bham-content {
+		height: 250vh;
+	}
+
+	#sonnet-house-content {
+		height: 150vh;
+	}
+
+	#wedding-party-content {
+		height: 700vh;
+	}
+
+	#proposal-content {
+		height: 120vh;
 	}
 
 	.registry div h1 {
@@ -465,6 +530,11 @@ button > a {
 	#wayfair {
 		font-size: 45px;
 	}
+
+	#map > iframe {
+		width: 75%;
+		height: 240px;
+	}
 }
 
 /***********************
@@ -480,6 +550,22 @@ button > a {
 		font-size: 2.25em;
 		padding-left: 55px;
 	}
+
+	#bham-content {
+		height: 280vh;
+	}
+
+	#sonnet-house-content {
+		height: 160vh;
+	}
+
+	#wedding-party-content {
+		height: 770vh;
+	}
+
+	#proposal-content {
+		height: 140vh;
+	}
 }
 
 /***********************
@@ -487,12 +573,37 @@ button > a {
 ************************/
 
 @media only screen and (max-width: 320px) {
+
+	nav ul li{
+		padding-top: 30px;
+	}
+
 	.title {
 		font-size: 3.2em;
 	}
 
+	#credits {
+		margin-top: 100px;
+	}
+
 	#index-bg > div > h2 {
 		font-size: 2em;
+	}
+
+	#bham-content {
+		height: 330vh;
+	}
+
+	#sonnet-house-content {
+		height: 180vh;
+	}
+
+	#wedding-party-content {
+		height: 900vh;
+	}
+
+	#proposal-content {
+		height: 160vh;
 	}
 
 	.registry div h1 {
@@ -526,6 +637,22 @@ button > a {
 
 	.full-width, .full-width-no-overlay {
 		width: 75%;
+	}
+
+	#credits {
+		margin-top: 175px;
+	}
+
+	#bham-content {
+		height: 205vh;
+	}
+
+	#sonnet-house-content {
+		height: 175vh;
+	}
+
+	#wedding-party-content {
+		height: 480vh;
 	}
 
 	h1 {
@@ -644,6 +771,10 @@ nav ul li a:hover{
 		/*font-size: 75px;*/
 		margin-top: 15px;
 		margin-bottom: 15px;
+	}
+
+	#bham-content > .padded-header {
+		margin-top: 75px;
 	}
 
 	.registry div h1 {
@@ -781,7 +912,7 @@ nav ul li a:hover{
 }
 
 #amanda-cooper {
-	background-image: url("../assets/img/amanda-cooper-0.jpg");
+	background-image: url("../assets/img/amanda-cooper.jpg");
 }
 
 #jessica-eiland{
