@@ -220,8 +220,12 @@ header {
 	background: #fff;
 }
 
-.content > h2:not(first-of-type) {
+#sonnet-house-content > h2 {
 	margin-top: 0px;
+}
+
+.content > h2 {
+	margin-top: 25px;
 }
 
 .button-placeholder {
@@ -351,7 +355,7 @@ button > a:hover {
 		display: block;
 
 		width: 100%;
-		height: calc((100vh / 7) - 30px);
+		height: calc((100vh / 7) - 66px);
 		padding-top: 35px;
 
 		text-align: center;
