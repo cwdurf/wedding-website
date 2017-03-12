@@ -36,10 +36,20 @@ main {
 
 .banner {
 	width: 100%;
-	height: 1024px;
+	height: 100vh;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
+}
+
+.half-banner {
+	width: 100%;
+	height: 50vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 }
 
 .content {
@@ -51,6 +61,10 @@ main {
 	color: white;
 }
 
+.centered {
+	padding-top: 25%;
+}
+
 .full-width {
 	overflow-y: auto;
 	background-color: rgba(0, 0, 0, 0.5);
@@ -58,7 +72,12 @@ main {
 
 .full-width-no-overlay {
 	overflow-y: auto;
-	height: 100vh;
+	height: 100%;
+}
+
+.full-width-no-overlay > h2 {
+	color: #000;
+	text-shadow: none;
 }
 
 .half-width {
@@ -82,6 +101,10 @@ p {
 
 	font-family: 'Raleway', serif;
 	font-weight: bold;
+}
+
+.storyboard > p {
+	color: #000;
 }
 
 .content-header {
@@ -141,6 +164,10 @@ h2 {
 	text-transform: uppercase;
 }
 
+.to-do > li > a:hover {
+	text-decoration: underline;
+}
+
 #index-bg > div > h2 {
 	text-shadow: #000 1px 1px;
 	font-size: 2.75em;
@@ -191,7 +218,7 @@ header {
 }
 
 .content > h2:not(first-of-type) {
-	margin-top: 25px;
+	margin-top: 0px;
 }
 
 .button-placeholder {
@@ -321,7 +348,7 @@ button > a:hover {
 		display: block;
 
 		width: 100%;
-		height: calc((100% / 7) - 30px);
+		height: calc((100vh / 7) - 30px);
 		padding-top: 35px;
 
 		text-align: center;
@@ -493,6 +520,10 @@ button > a:hover {
 		font-size: 35px;
 	}
 
+	.half-banner {
+		height: 100vh;
+	}
+
 	#index-bg > div > h2 {
 		font-size: 2.75em;
 	}
@@ -510,7 +541,7 @@ button > a:hover {
 	}
 
 	#proposal-content {
-		height: 120vh;
+		height: 160vh;
 	}
 
 	.registry div h1 {
@@ -552,7 +583,7 @@ button > a:hover {
 	}
 
 	#bham-content {
-		height: 280vh;
+		height: 285vh;
 	}
 
 	#sonnet-house-content {
@@ -564,7 +595,7 @@ button > a:hover {
 	}
 
 	#proposal-content {
-		height: 140vh;
+		height: 200vh;
 	}
 }
 
@@ -580,6 +611,10 @@ button > a:hover {
 
 	.title {
 		font-size: 3.2em;
+	}
+
+	.content > h2 {
+		font-size: 27.5px;
 	}
 
 	#credits {
@@ -603,7 +638,7 @@ button > a:hover {
 	}
 
 	#proposal-content {
-		height: 160vh;
+		height: 260vh;
 	}
 
 	.registry div h1 {
@@ -637,6 +672,11 @@ button > a:hover {
 
 	.full-width, .full-width-no-overlay {
 		width: 75%;
+	}
+
+	.header-no-padding {
+		font-size: 100px;
+		margin-bottom: 0;
 	}
 
 	#credits {
