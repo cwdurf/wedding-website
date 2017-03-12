@@ -355,7 +355,7 @@ button > a:hover {
 		display: block;
 
 		width: 100%;
-		height: calc((100vh / 7) - 66px);
+		height: calc((100vh / 7) - 44px);
 		padding-top: 35px;
 
 		text-align: center;
