@@ -563,7 +563,7 @@ button > a:hover {
 	}
 
 	#proposal-content {
-		height: 450vh;
+		height: 150vh;
 	}
 
 	.registry div h1 {
@@ -614,6 +614,10 @@ button > a:hover {
 
 	#wedding-party-content {
 		height: 770vh;
+	}
+
+	#proposal-banner {
+		height: 250vh;
 	}
 
 	#proposal-content {
