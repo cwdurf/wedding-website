@@ -2,6 +2,11 @@
 	Common
 *******************/
 
+body, html {
+	position: fixed;
+	width: 100%;
+}
+
 html {
 	overflow: hidden;
 
